@@ -1,0 +1,59 @@
+/*important css*/
+#inputContainer{
+  text-align:center;
+}
+#artContainer{
+  text-align:center;
+  
+}
+#artContainer img {
+  width:21%;
+  padding:2px 4px;
+}
+#labelText{
+  color:white;
+  font-family:arial;
+  font-size:12px;
+  display:inline;
+}
+/*not important css*/
+body{
+  background-color:#1c1c1c;
+}
+
+/*w3schools slider css*/
+.slidecontainer{
+  display:inline-block;
+  vertical-align:middle;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: .9;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius:50%;
+  border: 1px double lime; 
+  background: #ffff42;
+  background:url(https://i.dlpng.com/static/png/1409223-cartoon-art-museum-cartoon-network-drawing-humour-transparent-sun-png-clipart-sun-png-900_680_preview.png)
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border:0;
+  background: yellow;
+  cursor: pointer;
+}

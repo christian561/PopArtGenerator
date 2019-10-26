@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pop Art Generator</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="inputContainer">
+	<input type="textarea" id="imageSrcInput" placeholder="https://images.unsplash.com/photo-1570368512663-942e54f0c183?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></input>
+	<button onClick="updateImages()">Update Images</button>
+	<span id="labelText"></span>
+	<!--start of sliders-->
+	<h4 id="labelText">Brightness:</h4>
+	<div class="slidecontainer">
+		<input type="range" min="0" max="500" value="100" class="slider" id="sliderBrightness">
+		
+	</div>
+
+	<h4 id="labelText">Contrast:</h4>
+	<div class="slidecontainer">
+		<input type="range" min="0" max="500" value="100" class="slider" id="sliderContrast">
+		
+	</div>
+
+	<h4 id="labelText">Saturation:</h4>
+	<div class="slidecontainer">
+		<input type="range" min="0" max="500" value="100" class="slider" id="sliderSaturation">
+		
+	</div>
+
+	<button onClick="renderImages('')">Randomize Colors</button>
+		<!--end of sliders-->
+</div>
+<div id="artContainer"></div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
